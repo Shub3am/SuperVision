@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import axios from "axios"
+import Image from "next/image"
 export default function Home() {
   const [text, setText] = useState("")
   const [file, setFile] = useState(null)
@@ -17,7 +18,6 @@ export default function Home() {
         })
         
     } else {
-        console.log(`${process.env.NEXT_PUBLIC_URL}`)
     const data = await fetch(`${process.env.NEXT_PUBLIC_URL}`, {method: "POST", mode: "cors", headers: {'Content-Type': 'application/json'},body: JSON.stringify({content: text})}).then(res=> res.json())
     setSpeedReadText(data.bionicRead)
 }
@@ -74,9 +74,9 @@ export default function Home() {
         </div>
         <div className="px-4 mt-5 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
             <span className="font-semibold text-gray-400 uppercase">BUILT FOR</span>
-            <div className="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
+            <div className="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-center">
                 <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
-                    <img src="https://htm-4-images.s3.amazonaws.com/img/HTMLOGHO__NEW-bg.webp" alt="hackthemountains"/>
+                    <Image height={500} src="https://htm-4-images.s3.amazonaws.com/img/HTMLOGHO__NEW-bg.webp" alt="hackthemountains" width={500}/>
                 </a>         
             </div>
         </div> 
