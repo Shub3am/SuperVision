@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import axios from "axios"
-import Image from "next/image"
 export default function Home() {
   const [text, setText] = useState("")
   const [file, setFile] = useState(null)
@@ -77,7 +76,7 @@ export default function Home() {
             <span className="font-semibold text-gray-400 uppercase">BUILT FOR</span>
             <div className="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
                 <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
-                    <Image src="https://htm-4-images.s3.amazonaws.com/img/HTMLOGHO__NEW-bg.webp" alt="hackthemountains"/>
+                    <img src="https://htm-4-images.s3.amazonaws.com/img/HTMLOGHO__NEW-bg.webp" alt="hackthemountains"/>
                 </a>         
             </div>
         </div> 
