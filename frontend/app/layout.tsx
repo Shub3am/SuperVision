@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'SuperVision',
-  description: 'Fast Read Anything in Seconds',
+  description: 'Speed Read Anything within Seconds!',
 }
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}><Header/>{children}</body>
+      <body className={`${inter.className} dark:bg-gray-900`}><Header/>{children}</body>
     </html>
   )
 }
