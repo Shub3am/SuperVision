@@ -2,4 +2,4 @@
 # Category: Health ( ADHD )
 
 ## Project: Speed Reader for People with ADHD and Dyslexia
-### By Shubham and Satvik
+### Deployed On Cloudflare Workers and Netlify
