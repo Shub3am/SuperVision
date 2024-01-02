@@ -1,0 +1,8 @@
+name = "super-vision"
+type = "webpack"
+main = "index.js"
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2024-01-02"
