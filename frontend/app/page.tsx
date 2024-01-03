@@ -77,11 +77,11 @@ export default function Home(): React.FCcomponent {
         
     </div>
     {(speedReadText) ? <div
-  className="block rounded-lg bg-white text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 my-10 w-2/3" >
+  className="block rounded-lg bg-grey text-left shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-neutral-700 my-10 w-2/3 " >
   <div className="p-6" style={{height: "500px", overflowY: "scroll"}}>
 
     <h5
-      className="mb-1 text-xl font-medium leading-2 text-neutral-800 dark:text-neutral-50" style={{letterSpacing: 0, lineHeight: "40px", color: "#c5bbbb"}} dangerouslySetInnerHTML={{__html: speedReadText}}>
+      className="mb-1 text-xl font-medium leading-2 text-neutral-800 " style={{letterSpacing: 0, lineHeight: "40px", color: "#c5bbbb"}} dangerouslySetInnerHTML={{__html: speedReadText}}>
     </h5>
     
   </div>
